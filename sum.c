@@ -1,14 +1,14 @@
 #include <stdio.h> 
 int sum (int a, int b)
 {
-  printf("sum is %d\n", a+b);
-
-  return 0;
+  return a+b;
 }
 
 int main (void)
 {
-  sum(2,2);
+  int const a=sum(2,2);
+
+  printf("sum is %d\n",a);
 
   return 0;
 }
